@@ -12,16 +12,26 @@ public class Employee {
 	private Long employeeId;
 	private String employeeName;
 	private String employeeSalary; 
+	private String employeeNumber;
 
 	public Employee() {
 
 	}
 
-	public Employee(Long employeeId, String employeeName, String employeeSalary) {
+	public Employee(Long employeeId, String employeeName, String employeeSalary,String employeeNumber) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.employeeSalary = employeeSalary;
+		this.employeeNumber = employeeNumber;
+	}
+
+	public String getEmployeeNumber() {
+		return employeeNumber;
+	}
+
+	public void setEmployeeNumber(String employeeNumber) {
+		this.employeeNumber = employeeNumber;
 	}
 
 	public Long getEmployeeId() {
